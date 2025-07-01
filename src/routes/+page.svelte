@@ -1,2 +1,16 @@
-<h1>Welcome to Qnbie's home page</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+import ProjectCard from "$lib/components/project_card/project_card.svelte";
+
+const pkg = {
+  cardTitle: "CardTitle",
+  cardSubtitle: "CardSubtitle",
+  cardDescription: "CardDescrtiption",
+  githubLink: "github.com",
+  blogLink: "/blog",
+  tagList: ["Saab", "Volvo", "BMW"]
+}
+</script>
+
+<ProjectCard {...pkg}/>
+
+
