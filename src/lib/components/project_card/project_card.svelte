@@ -40,14 +40,14 @@
 			{#if hasBlogPage()}
 				<a
 					href={blogLink}
-					class="group inline-flex button-rounded gradient-horizontal hover:opacity-90 transition-opacity text-white"
+					class="group inline-flex button-rounded gradient-horizontal hover:opacity-90 transition-opacity text-white m-2 text-center"
 					>Blog Post</a
 				>
 			{/if}
 			{#if hasGithubPage()}
 				<a
 					href={githubLink}
-					class="group inline-flex button-rounded border border-gray-700 hover:border-pink-500 transition-colors text-white"
+					class="group inline-flex button-rounded border border-gray-700 hover:border-pink-500 transition-colors text-white m-2"
 					>Github</a
 				>
 			{/if}
@@ -63,7 +63,7 @@
 	}
 
 	.corner-topleft {
-		@apply top-0 left-0 border-t-2 border-l-2 rounded-tl-2xl;
+		@apply top-0 left-0 border-t-2 border-l-2 rounded-tl-2xl border-indigo-500;
 	}
 	.corner-topright {
 		@apply top-0 right-0 border-t-2 border-r-2 rounded-tr-2xl;

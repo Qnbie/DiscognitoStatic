@@ -47,7 +47,7 @@
 			</div>
       <div class="flex">
 
-			<input type="submit" class="m-2 button-rounded gradient-horizontal" placeholder="Send Email"/>
+			<input type="submit" class="m-2 button-rounded gradient-horizontal hover:opacity-90 transition-opacity" value="Submit"/>
       </div>
 		</form>
 	</div>

@@ -3,7 +3,7 @@
 </script>
 
 <section class="home-page-section justify-center">
-	<div class="flex container flex-col md:flex-row items-center gap-16 w-full lg:h-screen h-fit">
+	<div class="flex container flex-col md:flex-row items-center gap-16 w-full xl:h-screen h-[1000px]">
 		<div class="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0 flex flex-row flex-1/2">
       <div
 				class="flex flex-col items-center justify-start gap-2 text-sm tracking-widest ml-[-50px] md:ml-[-10px] lg:ml-0"
