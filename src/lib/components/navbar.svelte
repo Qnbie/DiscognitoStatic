@@ -13,6 +13,9 @@
          <a class="menu-item interactive" href="/blog">
              Blog
          </a>
+         <a class="menu-item interactive" href="/conatactme">
+             Contact Me
+         </a>
      </div>
 </nav>
 

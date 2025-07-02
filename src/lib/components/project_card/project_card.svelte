@@ -24,7 +24,7 @@
 		<div class="corner-piece corner-bottomright"></div>
 
 		<h2 class="text-3xl font-bold mb-2 text-white">{cardTitle}</h2>
-		<h3 class="text-2xl font-semibold mb-6 text-transparent bg-clip-text gradient-horizontal">
+		<h3 class="text-2xl font-semibold mb-6 gradient-text">
 			{cardSubtitle}
 		</h3>
 		<p class="text-lg text-gray-300 mb-8">{cardDescription}</p>
