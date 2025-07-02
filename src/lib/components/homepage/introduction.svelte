@@ -2,9 +2,9 @@
   import profpic from "$lib/assets/profpic.png";
 </script>
 
-<section class="home-page-section">
+<section class="home-page-section justify-center">
 	<div class="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
-		<div class="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0 flex flex-row">
+		<div class="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0 flex flex-row flex-1/2">
       <div
 				class="flex flex-col items-center justify-start gap-2 text-sm tracking-widest ml-[-50px] md:ml-[-10px] lg:ml-0"
 			>
@@ -28,8 +28,8 @@
 				</p>
 			</div>
 		</div>
-    <div class="w-full md:w-1/2 h-150 flex justify-center items-center">
-      <img src={profpic} alt="Me in my coolest form" class="m-auto object-contain w-full h-full" />
+    <div class="w-full md:w-1/2 h-150 justify-end flex flex-none">
+      <img src={profpic} alt="Me in my coolest form" class="h-full" />
     </div>
 	</div>
 </section>
