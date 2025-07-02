@@ -1,3 +1,3 @@
 <section class="home-page-section">
-  <h1>Latest BlogPosts </h1>
+  <h2 class="title-size">Favourite Blogpost</h2>
 </section>

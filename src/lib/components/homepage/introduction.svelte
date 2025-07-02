@@ -1,5 +1,5 @@
 <script lang="ts">
-  import cat_taco from "$lib/assets/cat_taco.png";
+  import profpic from "$lib/assets/profpic.png";
 </script>
 
 <section class="home-page-section">
@@ -28,8 +28,8 @@
 				</p>
 			</div>
 		</div>
-    <div class="w-full md:w-1/2 flex justify-center items-center">
-      <img src={cat_taco} alt="Me in my coolest form">
+    <div class="w-full md:w-1/2 h-150 flex justify-center items-center">
+      <img src={profpic} alt="Me in my coolest form" class="m-auto object-contain w-full h-full" />
     </div>
 	</div>
 </section>
@@ -37,7 +37,4 @@
 <style lang="postcss">
 	@reference "tailwindcss";
 
-	.title-size {
-		@apply xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-semibold leading-tight;
-	}
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
+	import ContactMe from "$lib/components/homepage/contact_me.svelte";
 	import Introduction from "$lib/components/homepage/introduction.svelte";
-  import FavouriteProjects from "$lib/components/homepage/favourite_projects.svelte";
-  import LatestBlogPosts from "$lib/components/homepage/latest_blog_posts.svelte";
+  import RecentActivities from "$lib/components/homepage/recent_activities.svelte";
 
 const pkg = {
   cardTitle: "CardTitle",
@@ -14,9 +14,5 @@ const pkg = {
 </script>
 
 <Introduction />
-
-<FavouriteProjects />
-
-<LatestBlogPosts />
-
-<h2>Contact Me</h2>
+<RecentActivities />
+<ContactMe />
