@@ -16,7 +16,7 @@
 	}
 </script>
 
-<div class="max-w-4xl mx-auto">
+<div class="max-w-4xl mx-auto p-3">
 	<div class="relative bg-gray-900/50 backdrop-blur-xl rounded-2xl p-8 border border-gray-800">
 		<div class="corner-piece corner-topleft"></div>
 		<div class="corner-piece corner-topright"></div>

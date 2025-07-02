@@ -1,4 +1,4 @@
-<div class="text-center">
+<div class="text-center m-24">
 	Discognito
 	<div class="block text-sm text-center text-gray-500">
 		© 2025 QnLab™. All Rights Reserved. Built with
