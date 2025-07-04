@@ -1,5 +1,11 @@
 <script lang="ts">
-  let { data } = $props();
+  import type { PageProps } from '../$types';
+
+  interface Props {
+    data: unknown;
+  }
+
+  let { data }: Props = $props();
 </script>
 
 <svelte:head>

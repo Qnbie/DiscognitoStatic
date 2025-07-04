@@ -1,18 +1,23 @@
 <script lang="ts">
   import TagButton from './tag_button.svelte';
+  import type { Post } from '$lib/types';
 
-  let { cardTitle, cardSubtitle, cardDescription, tagList, blogLink, githubLink } = $props();
+  interface Props {
+    post: Post;
+  }
+
+  let { post }: Props = $props();
 
   function hasBlogPage() {
-    return blogLink;
+    return post.slug;
   }
 
   function hasGithubPage() {
-    return githubLink;
+    return post;
   }
 
   function hasTags() {
-    return tagList;
+    return post.tags;
   }
 </script>
 
@@ -23,14 +28,14 @@
     <div class="corner-piece corner-bottomleft"></div>
     <div class="corner-piece corner-bottomright"></div>
 
-    <h2 class="text-3xl font-bold mb-2 text-white">{cardTitle}</h2>
+    <h2 class="text-3xl font-bold mb-2 text-white">{post.title}</h2>
     <h3 class="text-2xl font-semibold mb-6 gradient-text">
-      {cardSubtitle}
+      {post.sub_title}
     </h3>
-    <p class="text-lg text-gray-300 mb-8">{cardDescription}</p>
+    <p class="text-lg text-gray-300 mb-8">{post.description}</p>
     {#if hasTags()}
       <ul class="flex flex-wrap gap-3 mb-8 text-gray-300">
-        {#each tagList as tag}
+        {#each post.tags as tag}
           <TagButton buttonTitle={tag} />
         {/each}
       </ul>
@@ -39,14 +44,14 @@
     <div>
       {#if hasBlogPage()}
         <a
-          href={blogLink}
+          href={post.slug}
           class="group inline-flex button-rounded gradient-horizontal hover:opacity-90 transition-opacity text-white m-2 text-center"
           >Blog Post</a
         >
       {/if}
       {#if hasGithubPage()}
         <a
-          href={githubLink}
+          href={post.github_link}
           class="group inline-flex button-rounded border border-gray-700 hover:border-pink-500 transition-colors text-white m-2"
           >Github</a
         >

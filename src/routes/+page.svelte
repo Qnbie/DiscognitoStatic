@@ -4,17 +4,16 @@
   import Introduction from '$lib/components/homepage/introduction.svelte';
   import RecentActivities from '$lib/components/homepage/recent_activities.svelte';
 
-  const pkg = {
-    cardTitle: 'CardTitle',
-    cardSubtitle: 'CardSubtitle',
-    cardDescription: 'CardDescrtiption',
-    githubLink: 'github.com',
-    blogLink: '/blog',
-    tagList: ['Saab', 'Volvo', 'BMW']
-  };
+  import type { Post } from '$lib/types';
+
+  interface Props {
+    data: any;
+  }
+
+  let { data }: Props = $props();
 </script>
 
 <HeroSection />
 <Introduction />
-<RecentActivities />
+<RecentActivities posts={data.posts} />
 <ContactMe />
