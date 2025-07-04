@@ -1,8 +1,15 @@
+import { join } from 'path';
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import { createHighlighter } from 'shiki';
+
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -17,20 +24,16 @@ const mdsvexOptions = {
       const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }));
       return `{@html \`${html}\` }`;
     }
-  }
+  },
+  layout: join(__dirname, './src/lib/mdlayout/layout.svelte')
 };
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult https://svelte.dev/docs/kit/integrations
-  // for more information about preprocessors
   extensions: ['.svelte', '.md'],
   preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 
   kit: {
-    // adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-    // If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-    // See https://svelte.dev/docs/kit/adapters for more information about adapters.
     adapter: adapter()
   }
 };

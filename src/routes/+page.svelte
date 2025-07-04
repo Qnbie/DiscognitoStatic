@@ -17,3 +17,4 @@
 <Introduction />
 <RecentActivities posts={data.posts} />
 <ContactMe />
+

@@ -13,7 +13,7 @@
   }
 
   function hasGithubPage() {
-    return post;
+    return post.github_link;
   }
 
   function hasTags() {
@@ -44,7 +44,7 @@
     <div>
       {#if hasBlogPage()}
         <a
-          href={post.slug}
+          href="/articles/{post.slug}"
           class="group inline-flex button-rounded gradient-horizontal hover:opacity-90 transition-opacity text-white m-2 text-center"
           >Blog Post</a
         >

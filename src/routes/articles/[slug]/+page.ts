@@ -5,8 +5,11 @@ export const load: PageServerLoad = async ({ params }) => {
   try {
     const post = await import(`../../../posts/${params.slug}.md`);
 
+    console.log(post.default);
+    
+
     return {
-      content: post.default,
+      PostContent: post.default,
       meta: post.metadata
     };
   } catch (e) {

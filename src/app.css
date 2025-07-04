@@ -38,3 +38,7 @@
 .title-size {
   @apply xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-semibold leading-tight;
 }
+
+.prose :is(h1,h2,h3,h4,h5,h6) {
+  @apply bg-amber-950;
+}

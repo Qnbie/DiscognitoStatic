@@ -2,31 +2,35 @@
   import type { PageProps } from '../$types';
 
   interface Props {
-    data: unknown;
+    data: any;
   }
 
   let { data }: Props = $props();
+
+  let {
+		content,
+		meta: { date, title },
+	} = data;
+
+const { PostContent } = data;
+
+  console.log(PostContent)
 </script>
 
 <svelte:head>
-  <title>{data.meta.title}</title>
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content={data.meta.title} />
+  <title>{title}</title>
 </svelte:head>
 
 <article>
-  <hgroup>
-    <h1>{data.meta.title}</h1>
-    <p>Published at {data.meta.date}</p>
-  </hgroup>
-
-  <div class="tags">
-    {#each data.meta.categories as category}
-      <span class="surface-4">&num;{category}</span>
-    {/each}
-  </div>
-
   <div class="prose">
-    <data.content />
+    <PostContent />
   </div>
 </article>
+
+<style lang="postcss">
+  @reference "tailwindcss";
+
+  .prose :is(h1) {
+    @apply bg-amber-950;
+  }
+</style>
