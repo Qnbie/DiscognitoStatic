@@ -68,7 +68,7 @@ export function animateTyping(node: HTMLElement, texts: string[]) {
   setTimeout(typeEffect, 500);
 
   return {
-    onDestroy() { },
+    onDestroy() {},
     update(newTexts: string[]) {
       textsToType = newTexts;
     }
