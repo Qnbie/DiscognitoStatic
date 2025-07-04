@@ -1,1 +1,5 @@
-<h1>Contact Me</h1>
+<script>
+  import ContactMe from "$lib/components/homepage/contact_me.svelte";
+</script>
+
+<ContactMe />
