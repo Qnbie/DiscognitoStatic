@@ -19,6 +19,6 @@
   <title>{title}</title>
 </svelte:head>
 
-<div class="prose justify-center content-center flow">
+<section class="prose w-full pt-30">
   <PostContent />
-</div>
+</section>

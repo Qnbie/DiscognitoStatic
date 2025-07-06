@@ -1,21 +1,16 @@
-<!-- component -->
-<nav class="w-1/2 mx-auto my-4 bg-cyan-400 px-8 pt-2 shadow-md rounded-md">
-  <div class="-mb-px flex justify-center">
-    <a class="menu-item interactive" href="/"> Home </a>
-    <a class="menu-item interactive" href="/aboutme"> AboutMe </a>
-    <a class="menu-item interactive" href="/portfolio"> Portfolio </a>
-    <a class="menu-item interactive" href="/blog"> Blog </a>
-  </div>
-</nav>
+<div class="w-full h-fit fixed top-0 left-0 right-0 z-50 mt-7">
+  <div class="w-1/6 h-10 bg-bg-dark blur-xl mx-auto"></div>
+  <nav class="absolute top-0 right-0 left-0 flex flex-row justify-center">
+    <a class="menu-item" href="/">Home</a>
+    <a class="menu-item" href="/aboutme">About Me</a>
+    <a class="menu-item" href="/articles">Articles</a>
+  </nav>
+</div>
 
 <style lang="postcss">
   @reference "tailwindcss";
 
   .menu-item {
-    @apply no-underline text-black border-b-2 border-transparent uppercase tracking-wide font-bold text-xs py-3 mr-8;
+    @apply m-2;
   }
-
-  .interactive {
-    @apply hover:text-gray-50 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-amber-300;
-  }
-</style>
+</style> 

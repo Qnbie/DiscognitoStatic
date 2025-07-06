@@ -25,10 +25,10 @@
   <div
     class="relative bg-gray-900/50 backdrop-blur-xl rounded-2xl p-8 border border-gray-800 h-full"
   >
-    <div class="corner-piece corner-topleft"></div>
-    <div class="corner-piece corner-topright"></div>
-    <div class="corner-piece corner-bottomleft"></div>
-    <div class="corner-piece corner-bottomright"></div>
+    <div class="corner-piece corner-topleft border-secondary-dark"></div>
+    <div class="corner-piece corner-topright border-accent-dark"></div>
+    <div class="corner-piece corner-bottomleft border-accent-dark"></div>
+    <div class="corner-piece corner-bottomright border-accent-dark"></div>
 
     <div class="flex-col justify-start h-2/3">
       <h2 class="text-3xl font-bold mb-2">{post.title}</h2>
@@ -73,11 +73,11 @@
   @reference "tailwindcss";
 
   .corner-piece {
-    @apply absolute w-20 h-20 border-accent-dark;
+    @apply absolute w-20 h-20;
   }
 
   .corner-topleft {
-    @apply top-0 left-0 border-t-2 border-l-2 rounded-tl-2xl border-secondary-dark;
+    @apply top-0 left-0 border-t-2 border-l-2 rounded-tl-2xl;
   }
   .corner-topright {
     @apply top-0 right-0 border-t-2 border-r-2 rounded-tr-2xl;

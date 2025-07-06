@@ -13,7 +13,7 @@
   ];
 </script>
 
-<section class="xl:h-screen w-full relative h-screen" style="background-image: url({galaxy_bg})">
+<div class="xl:h-screen w-full relative h-screen bg-fixed" style="background-image: url({galaxy_bg})">
   <div class="flex flex-col justify-center items-center h-screen">
     <h1
       class="xl:text-8xl lm:text-7xl md:text-6xl sm:text-5xl text-4xl m-3 flex-none top-0 text-accent-dark bg-secondary-dark/70"
@@ -28,7 +28,7 @@
   <div class="bottom-0 left-0 w-1/2 xl:w-1/3 absolute">
     <img src={eva_mach} alt="Eva mach from NeonGenesisEvangelion" />
   </div>
-</section>
+</div>
 
 <style lang="postcss">
   @reference "tailwindcss";

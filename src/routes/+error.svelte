@@ -2,14 +2,7 @@
   import { page } from '$app/stores';
 </script>
 
-<div class="error">
+<section class="h-screen justify-center">
   <h1>{$page.status}: {$page.error?.message}</h1>
-</div>
+</section>
 
-<style>
-  .error {
-    height: 100%;
-    display: grid;
-    place-content: center;
-  }
-</style>

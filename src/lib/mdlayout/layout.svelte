@@ -5,18 +5,27 @@
   export let reading_time: string;
 </script>
 
-<a href="/"> Home</a>
-
-<article class="flex flex-col content-center justify-center w-1/2">
-  <h1 class="m-4">{title}</h1>
-  <div class="text-sm m-4">
-    <p>Published on: {date}</p>
-    <p>Author: {author}</p>
-    <p>Reading time: {reading_time}</p>
+<article class="flex flex-col content-center justify-center w-full divide-y divide-accent-dark">
+  <div>
+    <h1 class="article-margin">{title}</h1>
+    <div class="text-sm article-margin">
+      <p>Published on: {date}</p>
+      <p>Author: {author}</p>
+      <p>Reading time: {reading_time}</p>
+    </div>
   </div>
 
-  <div>
-  <slot>
-    <!-- the mdsvex content will be slotted in here -->
-  </slot></div>
+  <div class="article-margin w-full">
+    <slot>
+      <!-- the mdsvex content will be slotted in here -->
+    </slot>
+  </div>
 </article>
+
+<style lang="postcss">
+  @reference "tailwindcss";
+
+  .article-margin {
+    @apply my-4 mx-4 md:mx-6 lg:mx-8 xl:mx-10;
+  }
+</style>

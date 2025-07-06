@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Share+Tech+Mono&display=swap');
 @import 'tailwindcss';
 
-@theme static{
+@theme static {
   --color-bg-dark: #0b0f16;
   --color-accent-dark: #ff2e88;
   --color-secondary-dark: #6a00f4;
@@ -25,7 +25,7 @@
 
 @layer base {
   * {
-    @apply text-text-primary-dark
+    @apply text-text-primary-dark;
   }
 
   h1,
@@ -59,6 +59,10 @@
   p {
     @apply font-text-dark text-text-primary-dark text-base/6 subpixel-antialiased tracking-normal text-left;
   }
+
+  section {
+    @apply h-full w-full md:px-8 xl:px-20 bg-bg-dark flex items-center p-6;
+  }
 }
 
 .button-rounded-small,
@@ -90,12 +94,12 @@
   @apply text-transparent bg-clip-text;
 }
 
-.home-page-section {
-  @apply h-full w-full md:px-8 xl:px-20 bg-bg-dark flex items-center p-6;
+.prose :is(*) {
+  @apply m-2 text-wrap  break-normal hyphens-auto;
 }
 
-.prose :is(*) {
-  @apply m-2 text-wrap  break-normal hyphens-auto bg-bg-dark;
+.prose :is(*) :not(span, code) {
+  @apply bg-bg-dark;
 }
 
 .prose :is(ul) {
@@ -121,3 +125,4 @@
 .prose :is(th, td) {
   @apply border border-gray-400 p-1 ml-2 mr-2;
 }
+
