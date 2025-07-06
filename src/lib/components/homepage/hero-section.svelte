@@ -16,12 +16,12 @@
 <section class="xl:h-screen w-full relative h-screen" style="background-image: url({galaxy_bg})">
   <div class="flex flex-col justify-center items-center h-screen">
     <h1
-      class="xl:text-8xl lm:text-7xl md:text-6xl sm:text-5xl text-4xl m-3 flex-none top-0 text-pink-500 bg-indigo-300/70"
+      class="xl:text-8xl lm:text-7xl md:text-6xl sm:text-5xl text-4xl m-3 flex-none top-0 text-accent-dark bg-secondary-dark/70"
     >
       Qnbie the
     </h1>
     <span
-      class="xl:text-4xl lm:text-3xl md:text-2xl sm:text-1xl text-xl text-pink-500 bg-indigo-300/70"
+      class="xl:text-4xl lm:text-3xl md:text-2xl sm:text-1xl text-xl text-accent-dark bg-secondary-dark/70"
       use:animateTyping={nick_names}
     ></span>
   </div>
@@ -29,3 +29,7 @@
     <img src={eva_mach} alt="Eva mach from NeonGenesisEvangelion" />
   </div>
 </section>
+
+<style lang="postcss">
+  @reference "tailwindcss";
+</style>

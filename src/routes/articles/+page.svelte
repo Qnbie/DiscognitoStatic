@@ -3,7 +3,7 @@
 </script>
 
 <section>
-  <ul class="posts">
+  <ul>
     {#each data.posts as post}
       <li class="post">
         <a href="/articles/{post.slug}" class="title">{post.title}</a>

@@ -22,10 +22,10 @@
   };
 </script>
 
-<section class="home-page-section flex flex-col">
-  <div class="mb-12 flex w-full flex-col text-center">
-    <h2 class="title-size">Contact Me</h2>
-    <p class="mx-auto text-base leading-relaxed lg:w-2/3">
+<section class="home-page-section flex flex-col h-screen">
+  <div class="mb-12 flex w-full flex-col items-center">
+    <h2>Contact Me</h2>
+    <p>
       Feel free to reach out to me! Whether you have a question, feedback, or a collaboration
       proposal, I'd love to hear from you.
     </p>
@@ -48,7 +48,7 @@
       <div class="flex">
         <input
           type="submit"
-          class="m-2 button-rounded gradient-horizontal hover:opacity-90 transition-opacity"
+          class="m-2 button-rounded gradient-horizontal hover:opacity-90 transition-opacity text-text-primary-dark"
           value="Submit"
         />
       </div>
