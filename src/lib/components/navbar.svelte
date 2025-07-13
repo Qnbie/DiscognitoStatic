@@ -13,4 +13,4 @@
   .menu-item {
     @apply m-2;
   }
-</style> 
+</style>

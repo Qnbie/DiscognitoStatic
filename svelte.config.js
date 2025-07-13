@@ -1,6 +1,6 @@
 import { join } from 'path';
-import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from '@sveltejs/adapter-node';
 
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import { createHighlighter } from 'shiki';
@@ -34,7 +34,11 @@ const config = {
   preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 
   kit: {
-    adapter: adapter()
+    adapter: adapter({
+      out: 'build',
+      precompress: false,
+      envPrefix: ''
+    })
   }
 };
 

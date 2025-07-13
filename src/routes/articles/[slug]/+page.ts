@@ -6,7 +6,6 @@ export const load: PageServerLoad = async ({ params }) => {
     const post = await import(`../../../posts/${params.slug}.md`);
 
     console.log(post.default);
-    
 
     return {
       PostContent: post.default,
