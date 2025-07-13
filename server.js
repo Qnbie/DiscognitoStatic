@@ -4,8 +4,11 @@ import path from 'path';
 import https from 'https';
 import fs from 'fs';
 
-const privateKey = fs.readFileSync('./cert/private.key.pem');
-const domainCert = fs.readFileSync('./cert/domain.cert.pem');
+const privateKeyPath = process.env.SSL_CERT_PRIV_KEY
+const certPath = process.env.SSL_CERT
+
+const privateKey = fs.readFileSync(privateKeyPath);
+const domainCert = fs.readFileSync(certPath);
 const credentials = {
   key: privateKey,
   cert: domainCert
