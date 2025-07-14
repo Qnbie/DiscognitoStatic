@@ -11,8 +11,6 @@
   } = data;
 
   const { PostContent } = data;
-
-  console.log(PostContent);
 </script>
 
 <svelte:head>

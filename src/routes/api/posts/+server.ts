@@ -20,11 +20,6 @@ async function getPosts(event: any) {
   var tag: string = event.url.searchParams.get('tag');
   var latest_num: number = event.url.searchParams.get('latest');
 
-  console.log(tag);
-  console.log(latest_num > posts.length? posts.length: latest_num);
-  
-  
-
   posts = posts.sort(
     (first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
   );

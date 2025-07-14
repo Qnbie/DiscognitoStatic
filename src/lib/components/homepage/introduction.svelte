@@ -18,14 +18,18 @@
         <h2>Hi there, I am</h2>
         <h2 class="gradient-text">Bendeguz Kun</h2>
         <p class="p-3 leading-relaxed">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolor officia at culpa,
-          adipisci ipsum quia asperiores voluptas hic neque earum facilis corrupti sed quibusdam
-          facere, veritatis id accusantium velit. Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Placeat dolor officia at culpa, adipisci ipsum quia asperiores voluptas
-          hic neque earum facilis corrupti sed quibusdam facere, veritatis id accusantium velit.
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolor officia at culpa,
-          adipisci ipsum quia asperiores voluptas hic neque earum facilis corrupti sed quibusdam
-          facere, veritatis id accusantium velit.
+          I'm a somewhat full-stack software developer. My preferences are mostly on the back end of
+          things, but as this website can prove, I'm not afraid of the frontend either. Besides
+          these, I'm a Linux enthusiast (Windows-free from 2023), aspiring game developer, hobbyist
+          game engine noob, and in the past, I earned the security subject matter expert title for
+          some reason.
+        </p>
+        <p class="p-3 leading-relaxed">
+          This website is meant to be a showcase for my small projects and my thoughts on IT-related
+          topics. These projects are mainly for learning how to use new technologies, understanding
+          how old technologies work, and experimenting with various things. My philosophy in life is
+          to learn constantly and not be afraid to lose. This is what I wanted to showcase with my
+          portfolio site, <span class="gradient-text">Discognito</span>.
         </p>
       </div>
     </div>
