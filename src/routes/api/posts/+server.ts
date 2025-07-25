@@ -29,7 +29,7 @@ async function getPosts(event: any) {
   }
 
   if (latest_num) {
-    return posts.slice(0, latest_num > posts.length? posts.length : latest_num);
+    return posts.slice(0, latest_num > posts.length ? posts.length : latest_num);
   }
 
   return posts;

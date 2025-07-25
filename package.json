@@ -12,7 +12,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
-    "prod": "vite build && sudo node --env-file-if-exists=./.env server.js" 
+    "prod": "vite build && sudo node --env-file-if-exists=./.env server.js"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.5",

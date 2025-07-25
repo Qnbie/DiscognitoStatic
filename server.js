@@ -4,14 +4,14 @@ import path from 'path';
 import https from 'https';
 import fs from 'fs';
 
-const privateKeyPath = process.env.SSL_CERT_PRIV_KEY
-if (!privateKeyPath){
-  console.log("SSL Private key is missing")
+const privateKeyPath = process.env.SSL_CERT_PRIV_KEY;
+if (!privateKeyPath) {
+  console.log('SSL Private key is missing');
 }
 
-const certPath = process.env.SSL_CERT
-if (!certPath){
-  console.log("SSL Cert is missing")
+const certPath = process.env.SSL_CERT;
+if (!certPath) {
+  console.log('SSL Cert is missing');
 }
 
 const privateKey = fs.readFileSync(privateKeyPath);
